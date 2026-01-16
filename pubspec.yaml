@@ -1,5 +1,5 @@
 name: financial_transactions_flutter
-description: "A new Flutter project."
+description: "Payment transaction system with risk interception"
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
@@ -33,11 +33,10 @@ dependencies:
   equatable: ^2.0.8
 
   # Local Storage
-  shared_preferences: ^2.5.4
+  flutter_secure_storage: ^10.0.0
 
   # UI Utils
   uuid: ^4.5.2
-  flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_test:
@@ -51,8 +50,6 @@ dev_dependencies:
   freezed: ^3.2.3
   json_serializable: ^6.11.2
 
-  # Utilities
-  intl: any
 flutter:
   uses-material-design: true
 

@@ -1,0 +1,472 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
+
+part of 'transaction_viewmodel.dart';
+
+// **************************************************************************
+// FreezedGenerator
+// **************************************************************************
+
+// dart format off
+T _$identity<T>(T value) => value;
+/// @nodoc
+mixin _$TransactionState {
+
+
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is TransactionState);
+}
+
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'TransactionState()';
+}
+
+
+}
+
+/// @nodoc
+class $TransactionStateCopyWith<$Res>  {
+$TransactionStateCopyWith(TransactionState _, $Res Function(TransactionState) __);
+}
+
+
+/// Adds pattern-matching-related methods to [TransactionState].
+extension TransactionStatePatterns on TransactionState {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( _Initial value)?  initial,TResult Function( _Loading value)?  loading,TResult Function( _Success value)?  success,TResult Function( _Pending value)?  pending,TResult Function( _Error value)?  error,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _Initial() when initial != null:
+return initial(_that);case _Loading() when loading != null:
+return loading(_that);case _Success() when success != null:
+return success(_that);case _Pending() when pending != null:
+return pending(_that);case _Error() when error != null:
+return error(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( _Initial value)  initial,required TResult Function( _Loading value)  loading,required TResult Function( _Success value)  success,required TResult Function( _Pending value)  pending,required TResult Function( _Error value)  error,}){
+final _that = this;
+switch (_that) {
+case _Initial():
+return initial(_that);case _Loading():
+return loading(_that);case _Success():
+return success(_that);case _Pending():
+return pending(_that);case _Error():
+return error(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( _Initial value)?  initial,TResult? Function( _Loading value)?  loading,TResult? Function( _Success value)?  success,TResult? Function( _Pending value)?  pending,TResult? Function( _Error value)?  error,}){
+final _that = this;
+switch (_that) {
+case _Initial() when initial != null:
+return initial(_that);case _Loading() when loading != null:
+return loading(_that);case _Success() when success != null:
+return success(_that);case _Pending() when pending != null:
+return pending(_that);case _Error() when error != null:
+return error(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function()?  initial,TResult Function()?  loading,TResult Function( TransactionEntity t)?  success,TResult Function( TransactionEntity t)?  pending,TResult Function( String msg)?  error,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _Initial() when initial != null:
+return initial();case _Loading() when loading != null:
+return loading();case _Success() when success != null:
+return success(_that.t);case _Pending() when pending != null:
+return pending(_that.t);case _Error() when error != null:
+return error(_that.msg);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function()  initial,required TResult Function()  loading,required TResult Function( TransactionEntity t)  success,required TResult Function( TransactionEntity t)  pending,required TResult Function( String msg)  error,}) {final _that = this;
+switch (_that) {
+case _Initial():
+return initial();case _Loading():
+return loading();case _Success():
+return success(_that.t);case _Pending():
+return pending(_that.t);case _Error():
+return error(_that.msg);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function()?  initial,TResult? Function()?  loading,TResult? Function( TransactionEntity t)?  success,TResult? Function( TransactionEntity t)?  pending,TResult? Function( String msg)?  error,}) {final _that = this;
+switch (_that) {
+case _Initial() when initial != null:
+return initial();case _Loading() when loading != null:
+return loading();case _Success() when success != null:
+return success(_that.t);case _Pending() when pending != null:
+return pending(_that.t);case _Error() when error != null:
+return error(_that.msg);case _:
+  return null;
+
+}
+}
+
+}
+
+/// @nodoc
+
+
+class _Initial implements TransactionState {
+  const _Initial();
+  
+
+
+
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Initial);
+}
+
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'TransactionState.initial()';
+}
+
+
+}
+
+
+
+
+/// @nodoc
+
+
+class _Loading implements TransactionState {
+  const _Loading();
+  
+
+
+
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Loading);
+}
+
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'TransactionState.loading()';
+}
+
+
+}
+
+
+
+
+/// @nodoc
+
+
+class _Success implements TransactionState {
+  const _Success(this.t);
+  
+
+ final  TransactionEntity t;
+
+/// Create a copy of TransactionState
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SuccessCopyWith<_Success> get copyWith => __$SuccessCopyWithImpl<_Success>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Success&&(identical(other.t, t) || other.t == t));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,t);
+
+@override
+String toString() {
+  return 'TransactionState.success(t: $t)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SuccessCopyWith<$Res> implements $TransactionStateCopyWith<$Res> {
+  factory _$SuccessCopyWith(_Success value, $Res Function(_Success) _then) = __$SuccessCopyWithImpl;
+@useResult
+$Res call({
+ TransactionEntity t
+});
+
+
+$TransactionEntityCopyWith<$Res> get t;
+
+}
+/// @nodoc
+class __$SuccessCopyWithImpl<$Res>
+    implements _$SuccessCopyWith<$Res> {
+  __$SuccessCopyWithImpl(this._self, this._then);
+
+  final _Success _self;
+  final $Res Function(_Success) _then;
+
+/// Create a copy of TransactionState
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? t = null,}) {
+  return _then(_Success(
+null == t ? _self.t : t // ignore: cast_nullable_to_non_nullable
+as TransactionEntity,
+  ));
+}
+
+/// Create a copy of TransactionState
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$TransactionEntityCopyWith<$Res> get t {
+  
+  return $TransactionEntityCopyWith<$Res>(_self.t, (value) {
+    return _then(_self.copyWith(t: value));
+  });
+}
+}
+
+/// @nodoc
+
+
+class _Pending implements TransactionState {
+  const _Pending(this.t);
+  
+
+ final  TransactionEntity t;
+
+/// Create a copy of TransactionState
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$PendingCopyWith<_Pending> get copyWith => __$PendingCopyWithImpl<_Pending>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Pending&&(identical(other.t, t) || other.t == t));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,t);
+
+@override
+String toString() {
+  return 'TransactionState.pending(t: $t)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$PendingCopyWith<$Res> implements $TransactionStateCopyWith<$Res> {
+  factory _$PendingCopyWith(_Pending value, $Res Function(_Pending) _then) = __$PendingCopyWithImpl;
+@useResult
+$Res call({
+ TransactionEntity t
+});
+
+
+$TransactionEntityCopyWith<$Res> get t;
+
+}
+/// @nodoc
+class __$PendingCopyWithImpl<$Res>
+    implements _$PendingCopyWith<$Res> {
+  __$PendingCopyWithImpl(this._self, this._then);
+
+  final _Pending _self;
+  final $Res Function(_Pending) _then;
+
+/// Create a copy of TransactionState
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? t = null,}) {
+  return _then(_Pending(
+null == t ? _self.t : t // ignore: cast_nullable_to_non_nullable
+as TransactionEntity,
+  ));
+}
+
+/// Create a copy of TransactionState
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$TransactionEntityCopyWith<$Res> get t {
+  
+  return $TransactionEntityCopyWith<$Res>(_self.t, (value) {
+    return _then(_self.copyWith(t: value));
+  });
+}
+}
+
+/// @nodoc
+
+
+class _Error implements TransactionState {
+  const _Error(this.msg);
+  
+
+ final  String msg;
+
+/// Create a copy of TransactionState
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$ErrorCopyWith<_Error> get copyWith => __$ErrorCopyWithImpl<_Error>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Error&&(identical(other.msg, msg) || other.msg == msg));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,msg);
+
+@override
+String toString() {
+  return 'TransactionState.error(msg: $msg)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$ErrorCopyWith<$Res> implements $TransactionStateCopyWith<$Res> {
+  factory _$ErrorCopyWith(_Error value, $Res Function(_Error) _then) = __$ErrorCopyWithImpl;
+@useResult
+$Res call({
+ String msg
+});
+
+
+
+
+}
+/// @nodoc
+class __$ErrorCopyWithImpl<$Res>
+    implements _$ErrorCopyWith<$Res> {
+  __$ErrorCopyWithImpl(this._self, this._then);
+
+  final _Error _self;
+  final $Res Function(_Error) _then;
+
+/// Create a copy of TransactionState
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? msg = null,}) {
+  return _then(_Error(
+null == msg ? _self.msg : msg // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
+// dart format on
